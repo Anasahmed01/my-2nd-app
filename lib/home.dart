@@ -19,8 +19,18 @@ class HomeApp extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
+        backgroundColor: Colors.black,
         child: ListView(
-          children: const [],
+          children: const [
+            UserAccountsDrawerHeader(
+              accountName: Text("Anas Ahmed"),
+              accountEmail: Text("anasahmedyt321@gmial.com"),
+              currentAccountPicture: CircleAvatar(
+                child: Text("A"),
+                backgroundColor: Color.fromARGB(255, 255, 255, 255),
+              ),
+            )
+          ],
         ),
       ),
     );
