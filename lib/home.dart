@@ -60,4 +60,48 @@ class HomeApp extends StatelessWidget {
       ),
     );
   }
+
+  Widget mydrawerlist() {
+    return Container(
+      padding: const EdgeInsets.only(
+        top: 15,
+      ),
+      child: Column(
+        children: [
+          menuitem(),
+        ],
+      ),
+    );
+  }
+
+  Widget menuitem() {
+    return Material(
+      child: InkWell(
+        child: Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Row(
+            children: const [
+              Expanded(
+                child: Icon(
+                  Icons.dashboard_outlined,
+                  size: 20,
+                  color: Colors.black,
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Text(
+                  "Dashboard",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
 }
