@@ -77,6 +77,7 @@ class HomeApp extends StatelessWidget {
   Widget menuitem() {
     return Material(
       child: InkWell(
+        onTap: () {},
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Row(
